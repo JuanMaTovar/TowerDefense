@@ -9,6 +9,14 @@ public class Boss : MonoBehaviour
     public int vida = 100;
     public Animator Anim;
     // Start is called before the first frame update
+    private void OnEnable()
+    {
+        objetivo = GameObject.Find("Objetivo");
+    }
+    private void OnDisable()
+    {
+
+    }
     void Start()
     {
         GetComponent<NavMeshAgent>().SetDestination(objetivo.transform.position);
