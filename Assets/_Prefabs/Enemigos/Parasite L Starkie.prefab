@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parasite L Starkie
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f608e0ae5453c6b40a3be1cf4303f1a8, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: f608e0ae5453c6b40a3be1cf4303f1a8, type: 3}
       propertyPath: m_Controller
       value: 
@@ -92,6 +96,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
   vida: 100
+  _dano: 5
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
   Anim: {fileID: 0}
 --- !u!195 &6369190010098509444
 NavMeshAgent:
