@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 556824259999435196}
+  - component: {fileID: 2339865383887726502}
   m_Layer: 0
   m_Name: Torre4
   m_TagString: Untagged
@@ -34,6 +35,25 @@ Transform:
   - {fileID: 2143827317584439025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2339865383887726502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131589353651955318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36e7432c3db7744f9a94b5def7e1836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigo: {fileID: 0}
+  prefabBala: {fileID: 881912132151063861, guid: 67bfb474b5c8b6e4f8a6c0e0df276829, type: 3}
+  puntasCanon:
+  - {fileID: 4648647007444940603}
+  - {fileID: 8636171301514436187}
+  - {fileID: 6274341617196937336}
+  - {fileID: 7458286831863223344}
 --- !u!1 &1486742575719719259
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,7 +85,8 @@ Transform:
   m_LocalPosition: {x: 0.46, y: 1.2, z: 1.04}
   m_LocalScale: {x: 0.2, y: 1.4285715, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6243150454996157457}
   m_Father: {fileID: 2143827317584439025}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &8719160989961972539
@@ -141,6 +162,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &4648647007444940603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5148182460791938405}
+  m_Layer: 0
+  m_Name: Punta1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5148182460791938405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648647007444940603}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.05714208, y: 1.142, z: -0.02}
+  m_LocalScale: {x: 7.1428576, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5184317860290775100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5684821378168465945
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5684821378168465945}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.13899146, z: -0, w: 0.9902936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.98, z: 0}
   m_LocalScale: {x: 0.7, y: 1, z: 0.7}
   m_ConstrainProportionsScale: 0
@@ -179,7 +231,7 @@ Transform:
   - {fileID: 6380145754075045216}
   - {fileID: 7806546704344930448}
   m_Father: {fileID: 556824259999435196}
-  m_LocalEulerAnglesHint: {x: 0, y: -15.979, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6214818482192160583
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -253,6 +305,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &6274341617196937336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5952197759908950130}
+  m_Layer: 0
+  m_Name: Punta3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5952197759908950130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274341617196937336}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 4.67, y: 1.142, z: 0.06}
+  m_LocalScale: {x: 7.1428576, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6380145754075045216}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6315998927313387286
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +472,8 @@ Transform:
   m_LocalPosition: {x: -0.46, y: 1.68, z: 1.04}
   m_LocalScale: {x: 0.2, y: 1.4285715, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1015519780044526500}
   m_Father: {fileID: 2143827317584439025}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &8187515551573563360
@@ -496,7 +580,8 @@ Transform:
   m_LocalPosition: {x: -0.46, y: 1.2, z: 1.04}
   m_LocalScale: {x: 0.2, y: 1.4285715, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5952197759908950130}
   m_Father: {fileID: 2143827317584439025}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &928476896764145155
@@ -572,6 +657,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &7458286831863223344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6243150454996157457}
+  m_Layer: 0
+  m_Name: Punta4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6243150454996157457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458286831863223344}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.96, y: 1.142, z: 0.02}
+  m_LocalScale: {x: 7.1428576, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7806546704344930448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7806840380886071939
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +898,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8636171301514436187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015519780044526500}
+  m_Layer: 0
+  m_Name: Punta2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1015519780044526500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8636171301514436187}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.05714208, y: 1.142, z: 0.06}
+  m_LocalScale: {x: 7.1428576, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4228852541960882528}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8757047260674027924
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +960,8 @@ Transform:
   m_LocalPosition: {x: 0.46, y: 1.68, z: 1.04}
   m_LocalScale: {x: 0.2, y: 1.4285715, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5148182460791938405}
   m_Father: {fileID: 2143827317584439025}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!33 &1323070902772890359
