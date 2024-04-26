@@ -13,7 +13,7 @@ public class AdministradorTorres : MonoBehaviour
     
     public enum TorreSeleccionada
     {
-        Torre1, Torre2, Torre3, torre4, Torre5
+        Torre1, Torre2, Torre3, Torre4, Torre5
     }
     public TorreSeleccionada torreSeleccionada;
     public List<GameObject> prefabsTorres;
@@ -85,6 +85,8 @@ public class AdministradorTorres : MonoBehaviour
             TorreSeleccionada.Torre1 => 400,
             TorreSeleccionada.Torre2 => 600,
             TorreSeleccionada.Torre3 => 800,
+            TorreSeleccionada.Torre4 => 1000,
+            TorreSeleccionada.Torre5 => 1200,
            _ => 0
         };
 
